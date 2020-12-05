@@ -12,7 +12,7 @@ Initialize your api with Express. In case you forgot how, use the npm page to re
 Setup mongoose in express. Go over the lesson of Week 7 Day if you forgot how. Verify that you are connected to mongoose, model the book collection. Verify that you modelled the book correctly by using the `.find` method and console logging the result somewhere.
 
 ## Iteration 4 | Second Endpoint GET /books
-Set up an extra endpoint with Express. The endpoint should respond with all books in the database. Verify that you got it right by using either postman or your router.
+Set up an extra endpoint with Express. The endpoint should respond with all books in the database. Verify that you got it right by using either postman or your browser.
 
 ## Iteration 5 | Connect React to your Backend
 Install axios in the client directory and fire up React. Remember that you need to have your backend running first. Request all the movies by using `axios.get` in the callback of `useEffect`. 
@@ -21,7 +21,7 @@ Install axios in the client directory and fire up React. Remember that you need 
 This iteration continues with iteration 5. Put all the books in state with `useState`. Now render a list of all book titles.
 
 ## Iteration 7 | Third Endpoint POST /book
-In nodeJs, create another endpoint for posting data. Use `app.post` or `router.post`. This endpoint should read the book data from `req.body` and insert into the database by using the `Book.create`.  Remember that you need to use body-parser. The cors settings are also a bit tighter for posting data, which is why you need to use `app.options('*', cors()) // include before other routes`. Verify that your endpoint is working by using Postman. Don't forget to change "GET" into Post. You can enter the JSON data in: body=>raw=>select json (default is text).
+In nodeJs, create another endpoint for posting data. Use `app.post` or `router.post`. This endpoint should read the book data from `req.body` and insert into the database by using the `Book.create`.  Remember that you need to use body-parser. The cors settings are also a bit tighter for posting data, which is why you need to use `app.options('*', cors()) // include before other routes`. Verify that your endpoint is working by using Postman. Don't forget to change "GET" into "POST". You can enter the JSON data in: body=>raw=>select json (default is text).
 
 ## Iteration 8 | Create an add Book Component in React
 Use an `<input name='nameofproperty'>` field for every Book property. Control the data of the input fields through state. Use handleChange event listeners and remember you can extract the value through `e.target.value` and find out which input field triggered the eventHandler through `e.target.name`.
