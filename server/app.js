@@ -3,7 +3,7 @@ const express = require("express");
 const app = express();
 const cors = require("cors");
 // const books = require("./books.json");
-const MONGODB_URI = "mongodb://localhost:3000/fullstack-practice";
+const MONGODB_URI = "mongodb://localhost/fullstack-practice";
 const bodyParser = require("body-parser");
 
 app.options('*', cors())
