@@ -4,6 +4,7 @@ const app = express();
 const cors = require("cors");
 const Book = require("./models/Book");
 const MONGODB_URI = "mongodb://localhost/fullstack-practice";
+// START MONGODB $ mongod --dbpath ~/data/db
 const bodyParser = require("body-parser");
 
 app.options('*', cors())
