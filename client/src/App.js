@@ -1,23 +1,23 @@
-import logo from './logo.svg';
 import './App.css';
+import React, { useState, useEffect } from 'react';
+import { Link, Switch, Route } from 'react-router-dom';
+import Books from './components/Books';
+import Home from './components/Home';
+import AddBook from './components/AddBook';
 
 function App() {
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Link to="/">Home</Link>
+      <Link to="/books">Books</Link>
+      <Link to="add-book">Add Book</Link>
+
+      <Switch>
+        <Route exact path="/" render={(props) => <Home {...props} />} />
+        <Route exact path="/books" render={(props) => <Books {...props} />} />
+        <Route exact path="/add-book" render={(props) => <AddBook {...props} />} />
+      </Switch>
     </div>
   );
 }
