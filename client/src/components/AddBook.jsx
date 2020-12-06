@@ -35,7 +35,7 @@ const AddBook = () => {
         <input type="text" name="title" placeholder="title" value={book.title} onChange={handleChange} />
         <input type="text" name="description" placeholder="desc" value={book.description} onChange={handleChange} />
         <input type="number" name="rating" placeholder="rtng" value={book.rating} onChange={handleChange} />
-        <input type="date" name="created-at" placeholder="created" value={book.createdAt} onChange={handleChange} />
+        <input type="date" name="createdAt" placeholder="created" value={book.createdAt} onChange={handleChange} />
         <input type="number" name="_v" placeholder="version" value={book._v} onChange={handleChange} />
         <button type="submit">Submit</button>
       </form>
