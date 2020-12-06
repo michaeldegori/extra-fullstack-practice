@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import Axios from 'axios';
 
 const AddBook = () => {
@@ -23,8 +23,8 @@ const AddBook = () => {
     event.preventDefault();
 
     Axios
-      .post('http://localhost:3000/book')
-      .then(res => console.log("Movie created from React!"))
+      .post('http://localhost:3000/book', book)
+      .then(res => console.log("Book created from React!"))
       .catch(err => console.log(err))
   }
 
